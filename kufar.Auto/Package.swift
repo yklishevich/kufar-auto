@@ -37,7 +37,7 @@ let package = Package(
             name: "AutoData",
             dependencies: [
                 "AutoDomain",
-                .product(name: "Networking", package: "kufar.Foundation"),
+                .product(name: "NetworkingInterface", package: "kufar.Foundation"),
                 .product(name: "SharedKernel", package: "kufar.Foundation")
             ]
         ),
@@ -66,7 +66,7 @@ let package = Package(
                 "AutoData",
                 "AutoDomain",
                 .product(name: "AnalyticsAPI", package: "kufar.Analytics"),
-                .product(name: "Networking", package: "kufar.Foundation"),
+                .product(name: "NetworkingInterface", package: "kufar.Foundation"),
                 // ListingRef в сигнатуре rowAccessory(for:).
                 .product(name: "SharedKernel", package: "kufar.Foundation"),
                 // CatalogCategory и PostingDraft в сигнатуре postingStep(_:draft:).

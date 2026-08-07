@@ -1,12 +1,12 @@
 import Foundation
 import AutoDomain
-import Networking
+import NetworkingInterface
 import SharedKernel
 
 package struct RemoteAutoRepository: AutoRepository {
-    private let client: APIClient
+    private let client: any HTTPPerforming
 
-    package init(client: APIClient) {
+    package init(client: any HTTPPerforming) {
         self.client = client
     }
 

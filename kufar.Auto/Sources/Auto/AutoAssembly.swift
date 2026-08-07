@@ -3,14 +3,14 @@ import AutoData
 import AutoDomain
 import AutoUI
 import AnalyticsAPI
-import Networking
+import NetworkingInterface
 import SharedKernel
 import PostingInterface
 import CatalogContracts
 
 public enum AutoAssembly {
 
-    public static func makeRepository(client: APIClient) -> any AutoRepository {
+    public static func makeRepository(client: any HTTPPerforming) -> any AutoRepository {
         RemoteAutoRepository(client: client)
     }
 
